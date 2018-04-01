@@ -14,7 +14,7 @@ set ts=2
 set expandtab
 set sw=2
 set softtabstop=2
-set backspac=2
+set backspace=2
 
 set incsearch
 set hlsearch
