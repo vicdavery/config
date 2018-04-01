@@ -1,6 +1,23 @@
 set t_Co=256
 set dir=~/.swp
+set ai
+set visualbell
+set noerrorbells
+set report=0
+set guifont=Hack\ 16
+set statusline=~
+set showmode
+
+set smartindent
+set cindent
+set ts=2
+set expandtab
+set sw=2
+set softtabstop=2
+set backspac=2
+
 set incsearch
+set hlsearch
 syntax on
 filetype plugin indent on
 colorscheme wombat256mod
@@ -53,12 +70,10 @@ nnoremap <C-j> <C-W>j
 nnoremap + <C-W>+
 nnoremap - <C-W>-
 imap jk <Esc>
+imap jj <Esc>
 
 au BufWritePre * %s/\s\+$//e
 
-set expandtab
-set tabstop=2
-set shiftwidth=2
 set cino=(0,W4
 
 let g:airline_section_b='%p%%'
@@ -82,3 +97,10 @@ set number
 set cursorline
 set tw=120
 
+" Fix some typos caused by holding shift down for too long
+map :S :s
+map :X :x
+map :Q :q
+map :N :n
+map :W :w
+map :%S :%s
