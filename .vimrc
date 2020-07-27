@@ -7,7 +7,7 @@ set dir=~/.swp
 set visualbell
 set noerrorbells
 set report=0
-set guifont=Hack\ 16
+set guifont=Hack\ 12
 set statusline=~
 set showmode
 set nocompatible
@@ -43,9 +43,10 @@ noremap j h
 map n nzz
 map N Nzz
 
-let mapleader=' '
-nnoremap <Leader>| :vsplit<CR>
+let mapleader=" "
+
 nnoremap <Leader>- :split<CR>
+nnoremap <Leader>% :vsplit<CR>
 nnoremap <Leader>; <C-W>l
 nnoremap <Leader><Space> <C-^>
 nnoremap <Leader>a :A<CR>
@@ -53,12 +54,11 @@ nnoremap <Leader>b :ls<CR>
 nnoremap <Leader>c :noh<CR>
 nnoremap <Leader>d :bd<CR>
 nnoremap <Leader>e :Explore<CR>
-nnoremap <Leader>f :NERDTreeFind<CR>
 nnoremap <Leader>g gf
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gg :Ggrep <cword><CR>
-nnoremap <Leader>ggw :Ggrep 
+nnoremap <Leader>ggw :Ggrep
 nnoremap <Leader>gl :Gllog<CR>
 nnoremap <Leader>gs :Gstatus<CR>
 nnoremap <Leader>h :hide<CR>
@@ -72,14 +72,9 @@ nnoremap <Leader>n :bn<CR>
 nnoremap <Leader>p :bp<CR>
 nnoremap <Leader>qq :qa<CR>
 nnoremap <Leader>s <C-W>x
-nnoremap <Leader>t :NERDTreeToggle<CR>
 nnoremap <Leader>tn :tn<CR>
 nnoremap <Leader>tp :tp<CR>
 nnoremap <Leader>w :wa<CR>
-nnoremap <Leader>ydec :YcmCompleter GoToDeclaration<CR>
-nnoremap <Leader>ydef :YcmCompleter GoToDefinition<CR>
-nnoremap <Leader>yg :YcmCompleter GoTo<CR>
-nnoremap <Leader>ygi :YcmCompleter GoToInclude<CR>
 nnoremap <C-j> <C-W>j
 nnoremap + <C-W>+
 nnoremap - <C-W>-
@@ -106,13 +101,11 @@ nnoremap <F11> :cl<CR>
 set hidden
 set laststatus=2
 let g:airline_theme='molokai'
-let g:ycm_extra_conf=0
-let g:ycm_autoclose_preview_window_after_completion=1
 
 " Fix some typos caused by holding shift down for too long
-map :S :s
-map :X :x
-map :Q :q
-map :N :n
-map :W :w
-map :%S :%s
+" map :S :s
+" map :X :x
+" map :Q :q
+" map :N :n
+" map :W :w
+" map :%S :%s
