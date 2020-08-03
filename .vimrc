@@ -54,6 +54,9 @@ nnoremap <Leader>b :ls<CR>
 nnoremap <Leader>c :noh<CR>
 nnoremap <Leader>d :bd<CR>
 nnoremap <Leader>e :Explore<CR>
+nnoremap <Leader>fb :CtrlPBuffer<CR>
+nnoremap <Leader>fd :CtrlP<CR>
+nnoremap <Leader>ff :CtrlPMRU
 nnoremap <Leader>g gf
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gd :Gdiff<CR>
@@ -102,6 +105,9 @@ set hidden
 set laststatus=2
 let g:airline_theme='molokai'
 
+let g:ctrlp_match_window='bottom,order:ttb,min:5,max:30'
+let g:ctrlp_switch_buffer='ET'
+let g:ctrlp_user_command=['.git', 'cd %s && git ls-files']
 " Fix some typos caused by holding shift down for too long
 " map :S :s
 " map :X :x
