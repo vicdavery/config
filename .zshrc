@@ -1,3 +1,13 @@
+HISTFILE=~/.histfile                                                                                                                                                                                                                                                      
+HISTSIZE=100000                                                                                                                                                                                                                                                           
+SAVEHIST=100000
+bindkey -v
+
+zstyle :compinstall filename '/home/david/.zshrc'
+
+autoload -Uz compinit
+compinit
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
