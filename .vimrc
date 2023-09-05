@@ -2,6 +2,16 @@ set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
 
+call plug#begin()                                                                                                                                                                                                                                                         
+ Plug 'tpope/vim-fugitive'                                                                                                                                                                                                                                                 
+ Plug 'vim-airline/vim-airline'                                                                                                                                                                                                                                            
+ Plug 'kien/ctrlp.vim'                                                                                                                                                                                                                                                     
+ Plug 'tpope/vim-vinegar'                                                                                                                                                                                                                                                  
+ Plug 'vim-airline/vim-airline-themes'                                                                                                                                                                                                                                     
+ Plug 'klen/python-mode'                                                                                                                                                                                                                                                   
+ Plug 'dense-analysis/ale'                                                                                                                                                                                                                                                 
+call plug#end()
+
 set t_Co=256
 set dir=~/.swp
 set visualbell
