@@ -1,3 +1,4 @@
+vim.g.mapleader = " "
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -40,3 +41,24 @@ flags = {
 },
 capabilities = capabilities,
 }
+vim.keymap.set('n', 'j', 'h')
+vim.keymap.set('n', 'k', 'j')
+vim.keymap.set('n', 'l', 'k')
+vim.keymap.set('n', ';', 'l')
+vim.keymap.set('n', '<Leader>j', '<C-w>h')
+vim.keymap.set('n', '<Leader>k', '<C-w>j')
+vim.keymap.set('n', '<Leader>l', '<C-w>k')
+vim.keymap.set('n', '<Leader>;', '<C-w>l')
+vim.keymap.set('n', '<Leader><Space>', '<C-^>')
+vim.keymap.set('n', '<Leader>-', ':split<CR>')
+vim.keymap.set('n', '<Leader>%', ':vsplit<CR>')
+vim.keymap.set('n', '<Leader>c', ':noh')
+vim.keymap.set('n', '<Leader>d', 'bd<CR>')
+vim.keymap.set('n', '<Leader>n', ':bn<CR>')
+vim.keymap.set('n', '<Leader>p', ':bp<CR>')
+vim.keymap.set('n', '<Leader>w', 'wa<CR>')
+vim.keymap.set('i', 'jk', '<Esc>')
+vim.keymap.set('n', '<Leader>ff', ':Telescope find_files<CR>')
+vim.keymap.set('n', '<Leader>fb', ':Telescope buffers<CR>')
+vim.keymap.set('n', '<Leader>gf', ':Telescope git_files<CR>')
+vim.keymap.set('n', 'gs', ':Git<CR>')
